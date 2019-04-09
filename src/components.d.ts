@@ -28,6 +28,21 @@ export namespace Components {
 
   interface AppRoot {}
   interface AppRootAttributes extends StencilHTMLAttributes {}
+
+  interface JpFooter {}
+  interface JpFooterAttributes extends StencilHTMLAttributes {}
+
+  interface JpHeader {}
+  interface JpHeaderAttributes extends StencilHTMLAttributes {}
+
+  interface JpNavPrimary {}
+  interface JpNavPrimaryAttributes extends StencilHTMLAttributes {}
+
+  interface JpNavSecondary {}
+  interface JpNavSecondaryAttributes extends StencilHTMLAttributes {}
+
+  interface JpRacingStripe {}
+  interface JpRacingStripeAttributes extends StencilHTMLAttributes {}
 }
 
 declare global {
@@ -35,12 +50,22 @@ declare global {
     'AppHome': Components.AppHome;
     'AppProfile': Components.AppProfile;
     'AppRoot': Components.AppRoot;
+    'JpFooter': Components.JpFooter;
+    'JpHeader': Components.JpHeader;
+    'JpNavPrimary': Components.JpNavPrimary;
+    'JpNavSecondary': Components.JpNavSecondary;
+    'JpRacingStripe': Components.JpRacingStripe;
   }
 
   interface StencilIntrinsicElements {
     'app-home': Components.AppHomeAttributes;
     'app-profile': Components.AppProfileAttributes;
     'app-root': Components.AppRootAttributes;
+    'jp-footer': Components.JpFooterAttributes;
+    'jp-header': Components.JpHeaderAttributes;
+    'jp-nav-primary': Components.JpNavPrimaryAttributes;
+    'jp-nav-secondary': Components.JpNavSecondaryAttributes;
+    'jp-racing-stripe': Components.JpRacingStripeAttributes;
   }
 
 
@@ -62,16 +87,56 @@ declare global {
     new (): HTMLAppRootElement;
   };
 
+  interface HTMLJpFooterElement extends Components.JpFooter, HTMLStencilElement {}
+  var HTMLJpFooterElement: {
+    prototype: HTMLJpFooterElement;
+    new (): HTMLJpFooterElement;
+  };
+
+  interface HTMLJpHeaderElement extends Components.JpHeader, HTMLStencilElement {}
+  var HTMLJpHeaderElement: {
+    prototype: HTMLJpHeaderElement;
+    new (): HTMLJpHeaderElement;
+  };
+
+  interface HTMLJpNavPrimaryElement extends Components.JpNavPrimary, HTMLStencilElement {}
+  var HTMLJpNavPrimaryElement: {
+    prototype: HTMLJpNavPrimaryElement;
+    new (): HTMLJpNavPrimaryElement;
+  };
+
+  interface HTMLJpNavSecondaryElement extends Components.JpNavSecondary, HTMLStencilElement {}
+  var HTMLJpNavSecondaryElement: {
+    prototype: HTMLJpNavSecondaryElement;
+    new (): HTMLJpNavSecondaryElement;
+  };
+
+  interface HTMLJpRacingStripeElement extends Components.JpRacingStripe, HTMLStencilElement {}
+  var HTMLJpRacingStripeElement: {
+    prototype: HTMLJpRacingStripeElement;
+    new (): HTMLJpRacingStripeElement;
+  };
+
   interface HTMLElementTagNameMap {
     'app-home': HTMLAppHomeElement
     'app-profile': HTMLAppProfileElement
     'app-root': HTMLAppRootElement
+    'jp-footer': HTMLJpFooterElement
+    'jp-header': HTMLJpHeaderElement
+    'jp-nav-primary': HTMLJpNavPrimaryElement
+    'jp-nav-secondary': HTMLJpNavSecondaryElement
+    'jp-racing-stripe': HTMLJpRacingStripeElement
   }
 
   interface ElementTagNameMap {
     'app-home': HTMLAppHomeElement;
     'app-profile': HTMLAppProfileElement;
     'app-root': HTMLAppRootElement;
+    'jp-footer': HTMLJpFooterElement;
+    'jp-header': HTMLJpHeaderElement;
+    'jp-nav-primary': HTMLJpNavPrimaryElement;
+    'jp-nav-secondary': HTMLJpNavSecondaryElement;
+    'jp-racing-stripe': HTMLJpRacingStripeElement;
   }
 
 
