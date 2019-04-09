@@ -7,17 +7,19 @@ import { Component } from '@stencil/core';
 export class AppRoot {
     render() {
         return (
-            <div>
+            <div class="container">
                 <jp-header></jp-header>
 
-                <main>
+                <jp-content>
                     <stencil-router>
                         <stencil-route-switch scrollTopOffset={0}>
-                        <stencil-route url='/' component='app-home' exact={true} />
-                        <stencil-route url='/profile/:name' component='app-profile' />
+                            <stencil-route url='/' component='app-home' exact={true} />
+                            <stencil-route url='/work' component='app-work' />
+                            <stencil-route url='/writing' component='app-writing' />
+                            <stencil-route url='/radical' component='app-radical' />
                         </stencil-route-switch>
                     </stencil-router>
-                </main>
+                </jp-content>
 
                 <jp-footer></jp-footer>
             </div>

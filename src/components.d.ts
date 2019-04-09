@@ -29,6 +29,19 @@ export namespace Components {
   interface AppRoot {}
   interface AppRootAttributes extends StencilHTMLAttributes {}
 
+  interface AppWork {}
+  interface AppWorkAttributes extends StencilHTMLAttributes {}
+
+  interface JpContentH2 {
+    'title': string;
+  }
+  interface JpContentH2Attributes extends StencilHTMLAttributes {
+    'title'?: string;
+  }
+
+  interface JpContent {}
+  interface JpContentAttributes extends StencilHTMLAttributes {}
+
   interface JpFooter {}
   interface JpFooterAttributes extends StencilHTMLAttributes {}
 
@@ -50,6 +63,9 @@ declare global {
     'AppHome': Components.AppHome;
     'AppProfile': Components.AppProfile;
     'AppRoot': Components.AppRoot;
+    'AppWork': Components.AppWork;
+    'JpContentH2': Components.JpContentH2;
+    'JpContent': Components.JpContent;
     'JpFooter': Components.JpFooter;
     'JpHeader': Components.JpHeader;
     'JpNavPrimary': Components.JpNavPrimary;
@@ -61,6 +77,9 @@ declare global {
     'app-home': Components.AppHomeAttributes;
     'app-profile': Components.AppProfileAttributes;
     'app-root': Components.AppRootAttributes;
+    'app-work': Components.AppWorkAttributes;
+    'jp-content-h2': Components.JpContentH2Attributes;
+    'jp-content': Components.JpContentAttributes;
     'jp-footer': Components.JpFooterAttributes;
     'jp-header': Components.JpHeaderAttributes;
     'jp-nav-primary': Components.JpNavPrimaryAttributes;
@@ -85,6 +104,24 @@ declare global {
   var HTMLAppRootElement: {
     prototype: HTMLAppRootElement;
     new (): HTMLAppRootElement;
+  };
+
+  interface HTMLAppWorkElement extends Components.AppWork, HTMLStencilElement {}
+  var HTMLAppWorkElement: {
+    prototype: HTMLAppWorkElement;
+    new (): HTMLAppWorkElement;
+  };
+
+  interface HTMLJpContentH2Element extends Components.JpContentH2, HTMLStencilElement {}
+  var HTMLJpContentH2Element: {
+    prototype: HTMLJpContentH2Element;
+    new (): HTMLJpContentH2Element;
+  };
+
+  interface HTMLJpContentElement extends Components.JpContent, HTMLStencilElement {}
+  var HTMLJpContentElement: {
+    prototype: HTMLJpContentElement;
+    new (): HTMLJpContentElement;
   };
 
   interface HTMLJpFooterElement extends Components.JpFooter, HTMLStencilElement {}
@@ -121,6 +158,9 @@ declare global {
     'app-home': HTMLAppHomeElement
     'app-profile': HTMLAppProfileElement
     'app-root': HTMLAppRootElement
+    'app-work': HTMLAppWorkElement
+    'jp-content-h2': HTMLJpContentH2Element
+    'jp-content': HTMLJpContentElement
     'jp-footer': HTMLJpFooterElement
     'jp-header': HTMLJpHeaderElement
     'jp-nav-primary': HTMLJpNavPrimaryElement
@@ -132,6 +172,9 @@ declare global {
     'app-home': HTMLAppHomeElement;
     'app-profile': HTMLAppProfileElement;
     'app-root': HTMLAppRootElement;
+    'app-work': HTMLAppWorkElement;
+    'jp-content-h2': HTMLJpContentH2Element;
+    'jp-content': HTMLJpContentElement;
     'jp-footer': HTMLJpFooterElement;
     'jp-header': HTMLJpHeaderElement;
     'jp-nav-primary': HTMLJpNavPrimaryElement;
