@@ -22,6 +22,6 @@ export class RacingStripe {
                     <span class="RacingStripe-hash"></span>
                 </span>
             </div>
-        )
+        );
     }
 }

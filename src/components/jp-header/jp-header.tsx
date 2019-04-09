@@ -16,6 +16,6 @@ export class Header {
                 <jp-racing-stripe></jp-racing-stripe>
                 <jp-nav-primary></jp-nav-primary>
             </header>
-        )
+        );
     }
 }

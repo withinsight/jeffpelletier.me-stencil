@@ -32,6 +32,6 @@ export class NavPrimary {
                     </li>
                 </ul>
             </nav>
-        )
+        );
     }
 }

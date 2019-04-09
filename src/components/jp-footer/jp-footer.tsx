@@ -11,6 +11,6 @@ export class Footer {
             <footer class="Footer">
                 <jp-nav-secondary></jp-nav-secondary>
             </footer>
-        )
+        );
     }
 }

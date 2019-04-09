@@ -31,6 +31,6 @@ export class NavSecondary {
                     </a>
                 </li>
             </ul>
-        )
+        );
     }
 }
