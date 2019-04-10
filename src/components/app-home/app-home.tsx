@@ -8,7 +8,7 @@ export class AppHome {
     render() {
         return (
             <div>
-                <jp-content-h2 title="UX Designer &amp; Developer"></jp-content-h2>
+                <jp-content-h2 title="UX Designer &amp; Developer" />
 
                 <p>I'm a designer who's been coding professionally for over 15 years. <br /> I love technology, and write about it (when lightning strikes).</p>
 

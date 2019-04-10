@@ -8,7 +8,7 @@ export class AppRoot {
     render() {
         return (
             <div class="container">
-                <jp-header></jp-header>
+                <jp-header />
 
                 <jp-content>
                     <stencil-router>
@@ -21,7 +21,7 @@ export class AppRoot {
                     </stencil-router>
                 </jp-content>
 
-                <jp-footer></jp-footer>
+                <jp-footer />
             </div>
         );
     }
