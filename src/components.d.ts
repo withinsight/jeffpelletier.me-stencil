@@ -26,6 +26,9 @@ export namespace Components {
     'match'?: MatchResults;
   }
 
+  interface AppRadical {}
+  interface AppRadicalAttributes extends StencilHTMLAttributes {}
+
   interface AppRoot {}
   interface AppRootAttributes extends StencilHTMLAttributes {}
 
@@ -107,6 +110,7 @@ declare global {
   interface StencilElementInterfaces {
     'AppHome': Components.AppHome;
     'AppProfile': Components.AppProfile;
+    'AppRadical': Components.AppRadical;
     'AppRoot': Components.AppRoot;
     'AppWork': Components.AppWork;
     'AppWriting': Components.AppWriting;
@@ -126,6 +130,7 @@ declare global {
   interface StencilIntrinsicElements {
     'app-home': Components.AppHomeAttributes;
     'app-profile': Components.AppProfileAttributes;
+    'app-radical': Components.AppRadicalAttributes;
     'app-root': Components.AppRootAttributes;
     'app-work': Components.AppWorkAttributes;
     'app-writing': Components.AppWritingAttributes;
@@ -153,6 +158,12 @@ declare global {
   var HTMLAppProfileElement: {
     prototype: HTMLAppProfileElement;
     new (): HTMLAppProfileElement;
+  };
+
+  interface HTMLAppRadicalElement extends Components.AppRadical, HTMLStencilElement {}
+  var HTMLAppRadicalElement: {
+    prototype: HTMLAppRadicalElement;
+    new (): HTMLAppRadicalElement;
   };
 
   interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {}
@@ -242,6 +253,7 @@ declare global {
   interface HTMLElementTagNameMap {
     'app-home': HTMLAppHomeElement
     'app-profile': HTMLAppProfileElement
+    'app-radical': HTMLAppRadicalElement
     'app-root': HTMLAppRootElement
     'app-work': HTMLAppWorkElement
     'app-writing': HTMLAppWritingElement
@@ -261,6 +273,7 @@ declare global {
   interface ElementTagNameMap {
     'app-home': HTMLAppHomeElement;
     'app-profile': HTMLAppProfileElement;
+    'app-radical': HTMLAppRadicalElement;
     'app-root': HTMLAppRootElement;
     'app-work': HTMLAppWorkElement;
     'app-writing': HTMLAppWritingElement;
