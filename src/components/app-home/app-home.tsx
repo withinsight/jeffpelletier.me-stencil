@@ -12,7 +12,7 @@ export class AppHome {
 
                 <p>I'm a designer who's been coding professionally for over 15 years. <br /> I love technology, and write about it (when lightning strikes).</p>
 
-                <p>I've been experimenting and built 3 different versions of my portfolio. You're currently viewing the <strong>Stencil</strong> version.</p>
+                <p>I've been experimenting and built 3 different versions of my portfolio. You're currently viewing the <a data-hook="link-external" href="https://stenciljs.com/" rel="external">Stencil</a> version.</p>
 
                 <p>These additional version are available (note which version you're viewing via the URL bar):</p>
 
