@@ -32,6 +32,31 @@ export namespace Components {
   interface AppWork {}
   interface AppWorkAttributes extends StencilHTMLAttributes {}
 
+  interface AppWriting {}
+  interface AppWritingAttributes extends StencilHTMLAttributes {}
+
+  interface JpBlogPostHighlight {
+    'postLink': string;
+    'postTitle': string;
+    'pubDate': string;
+  }
+  interface JpBlogPostHighlightAttributes extends StencilHTMLAttributes {
+    'postLink'?: string;
+    'postTitle'?: string;
+    'pubDate'?: string;
+  }
+
+  interface JpBlogPostListItem {
+    'postLink': string;
+    'postTitle': string;
+    'pubDate': string;
+  }
+  interface JpBlogPostListItemAttributes extends StencilHTMLAttributes {
+    'postLink'?: string;
+    'postTitle'?: string;
+    'pubDate'?: string;
+  }
+
   interface JpCard {
     'clientTitle': string;
     'imageAlignRight': boolean;
@@ -84,6 +109,9 @@ declare global {
     'AppProfile': Components.AppProfile;
     'AppRoot': Components.AppRoot;
     'AppWork': Components.AppWork;
+    'AppWriting': Components.AppWriting;
+    'JpBlogPostHighlight': Components.JpBlogPostHighlight;
+    'JpBlogPostListItem': Components.JpBlogPostListItem;
     'JpCard': Components.JpCard;
     'JpContentH2': Components.JpContentH2;
     'JpContent': Components.JpContent;
@@ -100,6 +128,9 @@ declare global {
     'app-profile': Components.AppProfileAttributes;
     'app-root': Components.AppRootAttributes;
     'app-work': Components.AppWorkAttributes;
+    'app-writing': Components.AppWritingAttributes;
+    'jp-blog-post-highlight': Components.JpBlogPostHighlightAttributes;
+    'jp-blog-post-list-item': Components.JpBlogPostListItemAttributes;
     'jp-card': Components.JpCardAttributes;
     'jp-content-h2': Components.JpContentH2Attributes;
     'jp-content': Components.JpContentAttributes;
@@ -134,6 +165,24 @@ declare global {
   var HTMLAppWorkElement: {
     prototype: HTMLAppWorkElement;
     new (): HTMLAppWorkElement;
+  };
+
+  interface HTMLAppWritingElement extends Components.AppWriting, HTMLStencilElement {}
+  var HTMLAppWritingElement: {
+    prototype: HTMLAppWritingElement;
+    new (): HTMLAppWritingElement;
+  };
+
+  interface HTMLJpBlogPostHighlightElement extends Components.JpBlogPostHighlight, HTMLStencilElement {}
+  var HTMLJpBlogPostHighlightElement: {
+    prototype: HTMLJpBlogPostHighlightElement;
+    new (): HTMLJpBlogPostHighlightElement;
+  };
+
+  interface HTMLJpBlogPostListItemElement extends Components.JpBlogPostListItem, HTMLStencilElement {}
+  var HTMLJpBlogPostListItemElement: {
+    prototype: HTMLJpBlogPostListItemElement;
+    new (): HTMLJpBlogPostListItemElement;
   };
 
   interface HTMLJpCardElement extends Components.JpCard, HTMLStencilElement {}
@@ -195,6 +244,9 @@ declare global {
     'app-profile': HTMLAppProfileElement
     'app-root': HTMLAppRootElement
     'app-work': HTMLAppWorkElement
+    'app-writing': HTMLAppWritingElement
+    'jp-blog-post-highlight': HTMLJpBlogPostHighlightElement
+    'jp-blog-post-list-item': HTMLJpBlogPostListItemElement
     'jp-card': HTMLJpCardElement
     'jp-content-h2': HTMLJpContentH2Element
     'jp-content': HTMLJpContentElement
@@ -211,6 +263,9 @@ declare global {
     'app-profile': HTMLAppProfileElement;
     'app-root': HTMLAppRootElement;
     'app-work': HTMLAppWorkElement;
+    'app-writing': HTMLAppWritingElement;
+    'jp-blog-post-highlight': HTMLJpBlogPostHighlightElement;
+    'jp-blog-post-list-item': HTMLJpBlogPostListItemElement;
     'jp-card': HTMLJpCardElement;
     'jp-content-h2': HTMLJpContentH2Element;
     'jp-content': HTMLJpContentElement;
