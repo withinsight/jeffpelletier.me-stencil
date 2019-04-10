@@ -10,7 +10,7 @@ export class Header {
         return (
             <header class="Header">
                 <h1 class="Header-h1">
-                    <a href="index.html">Jeff<br /> Pelletier</a>
+                    <stencil-route-link url="/">Jeff<br /> Pelletier</stencil-route-link>
                 </h1>
 
                 <jp-racing-stripe></jp-racing-stripe>
