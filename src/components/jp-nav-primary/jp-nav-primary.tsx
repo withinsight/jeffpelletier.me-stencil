@@ -11,19 +11,22 @@ export class NavPrimary {
             <nav class="NavPrimary">
                 <ul class="NavPrimary-list">
                     <li class="NavPrimary-item">
-                        <a class="NavPrimary-link"
-                            href="work.html">Work
-                        </a>
+                        <stencil-route-link
+                            anchorClass="NavPrimary-link"
+                            url="work">Work
+                        </stencil-route-link>
                     </li>
                     <li class="NavPrimary-item">
-                        <a class="NavPrimary-link"
-                            href="writing.html">Writing
-                        </a>
+                        <stencil-route-link
+                            anchorClass="NavPrimary-link"
+                            url="writing">Writing
+                        </stencil-route-link>
                     </li>
                     <li class="NavPrimary-item">
-                        <a class="NavPrimary-link"
-                            href="radical.html">Radical
-                        </a>
+                        <stencil-route-link
+                            anchorClass="NavPrimary-link"
+                            url="radical">Radical
+                        </stencil-route-link>
                     </li>
                     <li class="NavPrimary-item">
                         <a class="NavPrimary-link"
