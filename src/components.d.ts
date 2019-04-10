@@ -32,6 +32,23 @@ export namespace Components {
   interface AppWork {}
   interface AppWorkAttributes extends StencilHTMLAttributes {}
 
+  interface JpCard {
+    'clientTitle': string;
+    'imageAlignRight': boolean;
+    'imageAltText': string;
+    'imageSrc': string;
+    'projectLink': string;
+    'projectTitle': string;
+  }
+  interface JpCardAttributes extends StencilHTMLAttributes {
+    'clientTitle'?: string;
+    'imageAlignRight'?: boolean;
+    'imageAltText'?: string;
+    'imageSrc'?: string;
+    'projectLink'?: string;
+    'projectTitle'?: string;
+  }
+
   interface JpContentH2 {
     'title': string;
   }
@@ -41,6 +58,9 @@ export namespace Components {
 
   interface JpContent {}
   interface JpContentAttributes extends StencilHTMLAttributes {}
+
+  interface JpDivider {}
+  interface JpDividerAttributes extends StencilHTMLAttributes {}
 
   interface JpFooter {}
   interface JpFooterAttributes extends StencilHTMLAttributes {}
@@ -64,8 +84,10 @@ declare global {
     'AppProfile': Components.AppProfile;
     'AppRoot': Components.AppRoot;
     'AppWork': Components.AppWork;
+    'JpCard': Components.JpCard;
     'JpContentH2': Components.JpContentH2;
     'JpContent': Components.JpContent;
+    'JpDivider': Components.JpDivider;
     'JpFooter': Components.JpFooter;
     'JpHeader': Components.JpHeader;
     'JpNavPrimary': Components.JpNavPrimary;
@@ -78,8 +100,10 @@ declare global {
     'app-profile': Components.AppProfileAttributes;
     'app-root': Components.AppRootAttributes;
     'app-work': Components.AppWorkAttributes;
+    'jp-card': Components.JpCardAttributes;
     'jp-content-h2': Components.JpContentH2Attributes;
     'jp-content': Components.JpContentAttributes;
+    'jp-divider': Components.JpDividerAttributes;
     'jp-footer': Components.JpFooterAttributes;
     'jp-header': Components.JpHeaderAttributes;
     'jp-nav-primary': Components.JpNavPrimaryAttributes;
@@ -112,6 +136,12 @@ declare global {
     new (): HTMLAppWorkElement;
   };
 
+  interface HTMLJpCardElement extends Components.JpCard, HTMLStencilElement {}
+  var HTMLJpCardElement: {
+    prototype: HTMLJpCardElement;
+    new (): HTMLJpCardElement;
+  };
+
   interface HTMLJpContentH2Element extends Components.JpContentH2, HTMLStencilElement {}
   var HTMLJpContentH2Element: {
     prototype: HTMLJpContentH2Element;
@@ -122,6 +152,12 @@ declare global {
   var HTMLJpContentElement: {
     prototype: HTMLJpContentElement;
     new (): HTMLJpContentElement;
+  };
+
+  interface HTMLJpDividerElement extends Components.JpDivider, HTMLStencilElement {}
+  var HTMLJpDividerElement: {
+    prototype: HTMLJpDividerElement;
+    new (): HTMLJpDividerElement;
   };
 
   interface HTMLJpFooterElement extends Components.JpFooter, HTMLStencilElement {}
@@ -159,8 +195,10 @@ declare global {
     'app-profile': HTMLAppProfileElement
     'app-root': HTMLAppRootElement
     'app-work': HTMLAppWorkElement
+    'jp-card': HTMLJpCardElement
     'jp-content-h2': HTMLJpContentH2Element
     'jp-content': HTMLJpContentElement
+    'jp-divider': HTMLJpDividerElement
     'jp-footer': HTMLJpFooterElement
     'jp-header': HTMLJpHeaderElement
     'jp-nav-primary': HTMLJpNavPrimaryElement
@@ -173,8 +211,10 @@ declare global {
     'app-profile': HTMLAppProfileElement;
     'app-root': HTMLAppRootElement;
     'app-work': HTMLAppWorkElement;
+    'jp-card': HTMLJpCardElement;
     'jp-content-h2': HTMLJpContentH2Element;
     'jp-content': HTMLJpContentElement;
+    'jp-divider': HTMLJpDividerElement;
     'jp-footer': HTMLJpFooterElement;
     'jp-header': HTMLJpHeaderElement;
     'jp-nav-primary': HTMLJpNavPrimaryElement;
