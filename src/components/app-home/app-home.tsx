@@ -14,7 +14,7 @@ export class AppHome {
 
                 <p>I've been experimenting and built 3 different versions of my portfolio. You're currently viewing the <a data-hook="link-external" href="https://stenciljs.com/" rel="external">Stencil</a> version.</p>
 
-                <p>These additional version are available (note which version you're viewing via the URL bar):</p>
+                <p>These additional versions are available (note which version you're viewing via the URL bar):</p>
 
                 <ul>
                     <li><a href="http://jeffpelletier.me">Vanilla HTML/CSS/JS Portfolio</a></li>
